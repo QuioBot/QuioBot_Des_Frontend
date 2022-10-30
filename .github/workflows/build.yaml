@@ -30,7 +30,7 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
       # - name: Build the Docker image
       #   run: docker build . --file Dockerfile --tag elghibaomar/searchbar-frontend:latest 
-      
+
 
       - name: Build container image
         working-directory: .
@@ -43,19 +43,19 @@ jobs:
       
       - name: Docker Push
         run: docker push elghibaomar/searchbar-frontend --all-tags
-      # - name: K8s cluster kubeconfig file with/ short-lived creds
-      #   run: |
-      #     doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ env.CLUSTER_NAME }}
+      - name: K8s cluster kubeconfig file with/ short-lived creds
+        run: |
+          doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ env.CLUSTER_NAME }}
 
-      # - name: Deployment image
-      #   run: |
-      #     kubectl apply -f k8s/apps/chatbot-frontend.yaml 
-      # - name: Update Deployment image
-      #   run: |
-      #     kubectl set image deployment/chatbot-frontend-deployment chatbot-frontend=elghibaomar/chatbot-frontend:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5}
-      # - name: Wait for rollout to finish
-      #   run: |
-      #     kubectl rollout status deployment/chatbot-frontend-deployment
+      - name: Deployment image
+        run: |
+          kubectl apply -f k8s/apps/searchbar-frontend.yaml 
+      - name: Update Deployment image
+        run: |
+          kubectl set image deployment/searchbar-frontend-deployment searchbar-frontend=elghibaomar/searchbar-frontend:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5}
+      - name: Wait for rollout to finish
+        run: |
+          kubectl rollout status deployment/searchbar-frontend-deployment
 
 
 
