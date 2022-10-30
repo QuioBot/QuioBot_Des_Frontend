@@ -23,7 +23,7 @@ RUN npm run build
 
 RUN npm install webpack-cli@3.3.12 --force
 
-EXPOSE 8080
+EXPOSE 8083
 CMD [ "http-server", "dist" ]
 
 
