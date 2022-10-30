@@ -28,20 +28,20 @@ jobs:
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag elghibaomar/searchbar-frontend:latest 
+      # - name: Build the Docker image
+      #   run: docker build . --file Dockerfile --tag elghibaomar/searchbar-frontend:latest 
 
       - name: Build container image
         working-directory: .
         run: |
           docker build -f Dockerfile \
-            -t elghibaomar/chatbot-frontend:latest \
-            -t elghibaomar/chatbot-frontend:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
+            -t elghibaomar/searchbar-frontend:latest \
+            -t elghibaomar/searchbar-frontend:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
           
       
       - name: Docker Push
-        run: docker push elghibaomar/chatbot-frontend --all-tags
+        run: docker push elghibaomar/searchbar-frontend --all-tags
       # - name: K8s cluster kubeconfig file with/ short-lived creds
       #   run: |
       #     doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ env.CLUSTER_NAME }}
