@@ -1,10 +1,13 @@
 <template>
+
+<div class="main-container">
     <div class="pad-container">
       <div tabindex="1" @focus="setCaret" class="autocomplete-container">
         <span @input="sendText" @keypress="preventInput" ref="editbar" class="editable" contenteditable="true"></span>
         <span class="placeholder" contenteditable="false">{{autoComplete}}</span>    
       </div>
     </div>
+  </div>
     </template>
     
     <script>
@@ -74,13 +77,31 @@
     </script>
     
     <style scoped>
+
+    .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
     
     .pad-container {
       padding: 0;
-      width: 640px;
+      position: absolute;
+      width: 80%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       border-radius: 12px;
       border: medium solid;
-      border-color: #ff7575;
+      border-color: #B4E116;
     }
     
     .autocomplete-container {
@@ -91,7 +112,7 @@
       width: 100%;
       text-align: left;
       position: relative;
-      background-color: rgba(255, 117, 117, 0.10);
+      /* background-color: #000; */
       caret-color: #ff7575;
     }
     
@@ -108,7 +129,7 @@
     }
     
     .placeholder {
-      color: gray;
+      color: white;
       position: absolute;
       left: 8px;
       top: 5px;
@@ -118,6 +139,6 @@
     @font-face {
       font-family: "Crete Round";
       src: local("Crete Round"),
-       url(../assets/fonts/Crete_Round/CreteRound-Regular.ttf) format("truetype");
+       url(../../assets/fonts/Crete_Round/CreteRound-Regular.ttf) format("truetype");
     }
     </style>

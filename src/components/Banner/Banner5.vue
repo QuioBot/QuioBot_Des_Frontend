@@ -38,7 +38,7 @@
 // import Countdown from '../Layouts/Countdown.vue';
 import "./styles.scss";
 import { dataBanner } from '../../fake-data/databanner';
-import Searchbar from '../Searchbar.vue'
+import Searchbar from '../Searchbar/Searchbar.vue'
 
 export default {
     name: "About",
