@@ -17,7 +17,7 @@ spec:
           image: elghibaomar/searchbar-frontend:latest
           env:
             - name: PORT
-              value: "8081"
+              value: "8083"
           ports:
           - containerPort: 8083
 
