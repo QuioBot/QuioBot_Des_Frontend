@@ -7,6 +7,7 @@
                     <div class="banner-top__content">
                         <h2 style="color:#B4E116 ;" class="title">{{title1}}</h2>
                         <h2 class="title">{{title2}}</h2>
+                        <!-- <h2 style="color:#B4E116 ;" class="title">{{title3}}</h2> -->
                         <p class="desc">{{desc}}</p>
                         <div class="button">
                             <a class="btn-action style-4" href="/home-defi-01"><span class="effect">Github Repository</span></a>
@@ -49,10 +50,11 @@ export default {
     data (){
         return {
             dataBanner,
-            title1 : 'QUIBOT',
-            title2 : 'Medical SearchBar',
-            desc : 'QuiBot Medical SearchBar is a graphical control element used in computer programs, such as file managers or web browsers, and on web sites. A search box is usually a single-line text box or search icon with the dedicated function of accepting user input to be searched for in a database',
-            desc2:'During Pre-Sale, get 5x tokens or 50.000 HVR per Ether. During regular sale, it will be 10.000 HVR per Ether.'
+            title1 : 'QUIBOT Deep Learning',
+            title2 : 'Medical SearchBar Suggestion',
+            title3 : 'Deep Learning',
+            desc : 'QuiBot Medical SearchBar is the function of search engines that displays keyword and product suggestions in real-time, based on what search query the user is typing into the search field.',
+            desc2:''
         }    
     }
 };

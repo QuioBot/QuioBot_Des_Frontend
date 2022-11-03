@@ -38,7 +38,7 @@ export default {
     name: 'Faq',
     data (){
         return {
-            title: 'QuioBot Medical ChatBot Shema ',
+            title: 'QuioBot Medical SearchBar Suggestion Road Map ',
             subtitle : '',
         }    
     },

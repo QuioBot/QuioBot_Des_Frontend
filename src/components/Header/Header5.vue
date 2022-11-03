@@ -18,7 +18,7 @@
                                         <a class="page-scroll" href="#Home">Home</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a class="page-scroll" href="#Shema">Shema</a>
+                                        <a class="page-scroll" href="#RoadMap">Road Map</a>
                                     </li>
                                     <li class="menu-item">
                                         <a class="page-scroll" href="#Technologies">Technologies</a>
@@ -27,7 +27,7 @@
                                         <a class="page-scroll" href="#About As">About As</a>
                                     </li> -->
                                     <li class="menu-item">
-                                        <a class="page-scroll" href="#Road Map">Road Map</a>
+                                        <a class="page-scroll" href="#Training">Training</a>
                                     </li>
                                     <li class="menu-item">
                                         <a class="page-scroll" href="#FAQ">FAQ</a>

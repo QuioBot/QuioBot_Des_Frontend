@@ -65,8 +65,8 @@ export default defineComponent ({
     },
     data: () => ({
         dataRoadMap,
-        desc: 'We’re slowly transforming the website into the best place for beginners to learn about cryptocurrencies.',
-        title: 'ROADMAP',
+        desc: '',
+        title: 'Training',
         settings: {
             itemsToShow: 1,
             snapAlign: 'center',

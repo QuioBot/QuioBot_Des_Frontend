@@ -113,7 +113,7 @@
       text-align: left;
       position: relative;
       /* background-color: #000; */
-      caret-color: #ff7575;
+      caret-color: #B4E116;
     }
     
     span {

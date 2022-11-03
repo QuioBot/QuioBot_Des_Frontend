@@ -31,7 +31,7 @@ export default {
     data (){
         return {
             title: 'FAQs ',
-            desc : 'Below we’ve provided a bit of ICO, ICO Token, cryptocurrencies, and few others.',
+            desc : '',
         }    
     },
     components: {
